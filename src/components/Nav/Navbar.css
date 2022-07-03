@@ -1,0 +1,193 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Hamburger menu */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+  top:0;
+  right:0;
+}
+.menu:active{
+  background-color: #011223fc !important;
+  
+}
+.menu:focus{
+  outline: none;
+}
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 10;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.lineCode1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+  stroke: white;
+}
+.lineCode2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+  stroke: white;
+}
+.lineCode3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+  stroke: white; 
+}
+@media (min-width: 884px) {
+  .menu {
+  display: none;
+  }  
+} /* Hamburger menu^ */
+
+/* spinner */
+.spinnerContainer{  
+position: fixed;
+top: 45% ;
+right: 44%;  
+} 
+.spinner {
+  position: fixed;
+  top: 12% ;
+  right: 39%; 
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background-color: rgba(238, 17, 128, 0.767)  ;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+ 
+  
+/* Menu items For Desktop*/
+.DesktopContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+  width: 100%;
+  background-color: #011223fc;
+   
+}
+.ForLeft{
+  color: white;
+  font-size:21px;
+  font-weight:   unset;
+  margin-left: 20px;
+}
+.navLink{
+ color: white;
+ font-size: 17px;
+}
+.Nlink{
+  margin-right:20px; 
+}
+.navLink:hover{
+  color: hsl(0, 8%, 83%);
+}
+.navLink:active{
+  color: hsl(0, 8%, 83%);
+}
+.navLink i{
+  margin-right:10px;
+}
+.ForLeft > .LogoForMobile{
+  display: none;
+} /* Menu items For Desktop ^ */
+
+/* Menu items For mobile*/
+.Mobilemenu{
+  display: flex;
+  flex-direction: column;
+  margin:26px 0 10px 0;
+   
+}
+.Mobilemenu > .navLink{
+  margin-bottom: 10px;
+}
+.ForRightMobile{
+  margin-bottom: 20px;
+}
+.Mobilemenu > .navLink:hover{
+  color:rgb(148, 144, 144) ;   
+}
+.Mobilemenu > .navLink{
+  font-size:20px;
+}
+.MobileContainer > .ForLeftMobile > .LogoForMobile{
+  display:block;
+}/* Menu items For mobile ^ */
+
+@media (max-width:884px){
+  .Desktopmenu{
+    display: none;
+  }
+  .ForRight{
+    display: none;
+  }
+  .MobileContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 256px;
+    width: 100%;
+    background-color:#011223fc;
+    transition: 0.3s;
+    font-size:height 20px;    
+  }
+  .ForLeftMobile{
+    display: none;
+  }
+  .spinnerContainer{
+    position: fixed;
+    top: 40% ;
+    right: 35%;
+    background: none;
+  }
+  .spinner{
+    position: fixed;
+    top: 17%;
+    right:22%;
+  }
+}

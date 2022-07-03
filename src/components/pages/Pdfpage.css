@@ -1,0 +1,99 @@
+
+      /* Pdf container */
+.pdfContainer{
+ display: flex;
+ flex-direction: column;
+ margin-top: 30px;  
+}      
+.title{
+  background-color: #313d4b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  letter-spacing:2px;
+}
+.subjectContainer{
+  font-size:15px; 
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.subName{
+  font-weight:600;
+  font-size: 20px;
+  margin-top:5px;
+}
+.unit-1-container{
+  display:flex;
+  padding-bottom: 10px;
+}
+.unit-1-text{
+  background-color: #313d4b  ;
+  color:white;
+  padding: 3.5px 13px;
+  border-radius:2px
+}
+ .unit-1-container button{
+  margin-left:40px ;
+  border: none;
+  background-color: rgb(100, 143, 15);
+  border-radius: 2px;
+  padding: 1.5px 15px;
+}
+.unit-1-container button a{
+  color: white;
+  text-decoration:none;
+
+}
+.unit-1-container button a:hover{
+  color: white;
+  text-decoration:none;
+}
+.btn-container > button:active{
+  background-color: #313d4b;
+}
+.unit-1-container button:focus{
+  outline:none;
+}
+.subUnitContainer{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #313d4b;
+  height:auto;
+  width: 60%;
+  padding: 7px; 
+}
+ 
+
+@media (max-width:884px) {
+  .unit-1-container button{
+  margin-left:30px ;
+  border: none;
+  background-color: rgb(100, 143, 15);
+  border-radius: 2px;
+  padding: 1.5px 15px;
+}
+.unit-1-text{
+  margin-left: 15px;
+  height: 25px;
+  width: 150px;
+} 
+.subUnitContainer{
+  height: auto;
+  width: 300px;
+}
+.btn-download{
+padding: 0 13.4px;
+margin-top: 10px;
+}
+.sub-name{  
+  margin-left:65px;
+}
+.unit-1-container{
+  display:flex;
+} 
+}
+ 

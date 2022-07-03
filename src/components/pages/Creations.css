@@ -1,0 +1,27 @@
+.creationsContainer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top:50px;
+}
+.creationsContainer p{
+background-color:#041526e8;
+height:auto;
+width:60%;    
+color: white;
+text-align:center;
+padding:8px 5px;
+border-radius: 5px;
+ 
+}
+.cre-page-footer{
+    margin-top:16%;
+}
+ 
+ 
+@media (max-width:884px) {
+.cre-page-footer{
+    margin-top: 480px;;
+     
+} 
+}

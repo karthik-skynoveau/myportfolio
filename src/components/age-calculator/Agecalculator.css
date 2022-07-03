@@ -1,0 +1,83 @@
+.age-calc-container{
+    background-color: #007aff;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    color:white;
+}
+.age-calc-container .age-calc-title {
+color: white;
+background-color: #041526;
+width: 80%;
+height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto;
+ margin-top: 20px;
+ font-size:25px;
+}
+.age-calc-container .age-text-1{
+    margin-top:20px;      
+}
+.age-calc-container .age-text-1 input{
+    margin-top: 10px;
+    font-size:16px;
+    padding: 10px ;
+    border-radius:5px;  
+    border: none;
+}
+.age-calc-container .age-text-1 input:focus{
+    outline:none;
+}
+.age-calc-container h2{
+    font-size:19px;
+    text-align: center;  
+}
+.age-calc-container .input {
+    margin-top:14px;
+    font-size:16px;
+    padding: 10px ;
+    border-radius:5px;  
+    border: none;  
+    width: 170px; 
+}
+.age-calc-container .input:focus{
+    outline:none;
+}
+.age-calc-container .age-btns-1{
+    width:460px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between ;
+    
+}
+.age-calc-container .age-btns {
+    margin-top:20px;
+    display: flex;
+    justify-content:center;
+}
+.age-calc-container .age-btns-1 button{
+    width:220px;
+    height: 42px;
+    border:none;
+    border-radius:7px;
+    cursor:pointer;
+}
+.age-calc-container .age-btns-1 button:focus{
+    outline:none;
+}
+@media (max-width:480px) {
+.age-calc-container .age-btns-1{
+     
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.age-calc-container .reset-btn{
+     margin-top: 10px;
+
+}  
+ 
+}
